@@ -1,4 +1,4 @@
-# Simon Says Game
+# Simon Says 🗣️​
 
 **Simon Says** é um jogo de memória simples onde o objetivo é seguir uma sequência crescente de comandos (letras W, A, S, D) e repetí-la corretamente. A cada ronda a sequência aumenta, tornando-se cada vez mais difícil. O jogo termina quando o jogador falha em repetir a sequência corretamente.
 
@@ -50,7 +50,7 @@ classDiagram
         +string GeneratePattern(int round)
     }
 
-    Program --> Game : creates
-    Game --> GameResult : stores results
-    Game --> CommandProvider : uses
-    GameResult --> CommandProvider : needs to generate patterns
+    Program --> Game
+    Game --> GameResult
+    Game --> CommandProvider
+    GameResult --> CommandProvider
